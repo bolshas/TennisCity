@@ -1,0 +1,40 @@
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-s-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    // border: 1px solid;
+    border-color: #888;
+}
+
+
+
+.test1, .test2, .test3, .test4, .test5, .test6,
+.test7, .test8, .test9, .test10, .test11, .test12 {
+    display: block;
+    border: 0;
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+@testColor: #1b9af7;
+
+.lighten(@color; @amount) {
+    background: @color + 2.56 * @amount;
+}
+
+.darken(@color; @amount) {
+    background: @color - 2.56 * @amount;
+}
+
+.test1 {.lighten(@testColor; 0);}
+.test2 {.lighten(@testColor; 10);}
+.test3 {.lighten(@testColor; 20);}
+.test4 {.lighten(@testColor; 30);}
+.test5 {.lighten(@testColor; 40);}
+.test6 {.lighten(@testColor; 50);}
+
+.test7 {.darken(@testColor; 0);}
+.test8 {.darken(@testColor; 10);}
+.test9 {.darken(@testColor; 20);}
+.test10 {.darken(@testColor; 30);}
+.test11 {.darken(@testColor; 40);}
+.test12 {.darken(@testColor; 50);}
