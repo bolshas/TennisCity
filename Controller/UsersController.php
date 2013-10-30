@@ -9,7 +9,7 @@ class UsersController extends AppController {
     
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('register', 'ajax_validate', 'confirm');
+        $this->Auth->allow('register', 'confirm');
     }
 
     public function confirm() {
@@ -23,7 +23,6 @@ class UsersController extends AppController {
                     $this->User->id = $u['User']['id'];
                     $this->User->saveField('state', 1); // activate the email
                     $this->Session->setFlash(__('Email validated successfully.'));
-                    
                 }
                 return $this->redirect(array('controller' => 'users', 'action' => 'login'));
             }
@@ -52,28 +51,6 @@ class UsersController extends AppController {
                 $this->Session->setFlash(__('The validation code has been sent to your email address. Please follow the instructions there.'));
                 return $this->redirect(array('controller' => 'users', 'action' => 'login'));
             }
-        }
-    }
-    
-    public function ajax_validate() {
-        $this->layout = 'ajax';
-        if ($this->request->is('post')) {
-            $modelName = key($this->request->data);
-            $fieldName = $this->request->data[$modelName]['fieldName'];
-            
-            $this->loadModel($modelName);
-            $this->$modelName->set($this->request->data);
-            
-            if ($this->$modelName->validates(array('fieldList' => array($fieldName)))) {
-                $message = $this->$modelName->success[$fieldName];
-                $status = 'has-success';
-            } else {
-                $errors = reset($this->$modelName->validationErrors);
-                $message = reset($errors);
-                $status = 'has-error';
-            }
-            
-            $this->set('data', json_encode(array('status' => $status, $fieldName => $message)));
         }
     }
     

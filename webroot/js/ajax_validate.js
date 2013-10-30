@@ -44,7 +44,7 @@ $(document).ready(function() {
             $(info).text('Checking...');
             
             $.post(
-                window.location + "ajax/users/validate", data,
+                window.location + "/users/validate", data,
                 function(data) {
                     $.each(data, function(key, value) {
                         if (key === 'status') {

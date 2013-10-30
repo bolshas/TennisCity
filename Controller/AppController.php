@@ -32,6 +32,8 @@ class AppController extends Controller {
         $this->Cookie->key = 'gWlW9AiZjB6OA3uFdeA45anRNT5LxF7DoWUVrJxi';
         $this->Cookie->httpOnly = true;
         
+        $this->Auth->allow('validateField');
+        
         if ($this->Auth->loggedIn()) {
             $this->layout = 'default';
         }
@@ -51,6 +53,29 @@ class AppController extends Controller {
                     $this->redirect($this->Auth->logout());
                 }
             }
+        }
+    }
+    
+    public function validateField() {
+        $this->layout = 'ajax';
+        $this->autoRender = false;
+        if ($this->request->is('post')) {
+            $modelName = key($this->request->data);
+            $fieldName = $this->request->data[$modelName]['fieldName'];
+            
+            $this->loadModel($modelName);
+            $this->$modelName->set($this->request->data);
+            
+            if ($this->$modelName->validates(array('fieldList' => array($fieldName)))) {
+                $message = $this->$modelName->success[$fieldName];
+                $status = 'has-success';
+            } else {
+                $errors = reset($this->$modelName->validationErrors);
+                $message = reset($errors);
+                $status = 'has-error';
+            }
+            // $this->set('data', json_encode(array('status' => $status, $fieldName => $message)));
+            echo json_encode(array('status' => $status, $fieldName => $message));
         }
     }
 }

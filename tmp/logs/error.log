@@ -5851,3 +5851,110 @@ Request URL: /TennisCity/js/jquery-latest.min.map
 Stack Trace:
 #0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-10-30 21:37:11 Error: [MissingControllerException] Controller class LabasController could not be found.
+Exception Attributes: array (
+  'class' => 'LabasController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/labas
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-30 21:37:27 Error: [MissingControllerException] Controller class LabaController could not be found.
+Exception Attributes: array (
+  'class' => 'LabaController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/laba
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-30 21:41:28 Error: [MissingActionException] Action UsersController::validateField() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'validateField',
+)
+Request URL: /TennisCity/users/validate
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-30 21:44:09 Error: [MissingViewException] View file "/Users/andriusbolsaitis/www/TennisCity/View/Users/validate_field.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/andriusbolsaitis/www/TennisCity/View/Users/validate_field.ctp',
+)
+Request URL: /TennisCity/users/validateField
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /users/andriusbolsaitis/www/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-30 21:47:54 Error: [MissingViewException] View file "/Users/andriusbolsaitis/www/TennisCity/View/Users/validate_field.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/andriusbolsaitis/www/TennisCity/View/Users/validate_field.ctp',
+)
+Request URL: /TennisCity/users/validateField
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /users/andriusbolsaitis/www/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-30 21:50:58 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/validateField
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-30 21:53:22 Error: [MissingControllerException] Controller class AjController could not be found.
+Exception Attributes: array (
+  'class' => 'AjController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/aj/validateField
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-30 21:54:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/ajax_validate.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-30 21:55:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/jquery-latest.min.map
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-30 21:55:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/jquery-latest.min.map
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-30 21:56:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/jquery-latest.min.map
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

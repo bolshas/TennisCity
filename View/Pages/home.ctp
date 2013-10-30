@@ -1,5 +1,5 @@
 <?php
-	$this->Html->script('users/check_username', array('inline' => false));
+	$this->Html->script('ajax_validate', array('inline' => false));
     
  	echo $this->Form->create('User', array(
  	    'controller' => 'users', 
