@@ -5,12 +5,10 @@ $bolDevelop = true;
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Tennis City</title>
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic&subset=latin,latin-ext">
-        
         <?php 
         if($bolDevelop === true) {
             App::import('Vendor', 'lessc');
@@ -20,26 +18,62 @@ $bolDevelop = true;
         echo $this->Html->css('bootstrap');
         echo $this->Html->script(array('jquery', 'jquery.ui', 'jquery.placeholder', 'jquery.typewatch', 'bootstrap'));
         
-        // <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        // <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-        
-        // <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-        
-        // <script src="http://rawgithub.com/mathiasbynens/jquery-placeholder/master/jquery.placeholder.js"></script>
-        // <script src="https://rawgithub.com/dennyferra/TypeWatch/master/jquery.typewatch.js"></script>
-        
-        // <script>$(function() { $('input, textarea').placeholder();});</script>
-        
         echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 		?>
+        <script>
+        $(function ()  
+        {
+          $('#disclaimer').popover(
+          {
+             trigger: 'hover',
+             html: true,
+             placement: 'bottom',
+             content: '<?php echo $this->element('test');?>'
+          });
+        });
+        </script>
     </head>
     
     <body>
-        <div class="container">
-            <?php echo $this->Session->flash(); ?>
-			<?php echo $this->fetch('content'); ?>
-        </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/TennisCity">Tennis City</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/TennisCity">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Blog</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action 1</a></li>
+                                <li><a href="#">Action 2</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#myModal" id="disclaimer">Sign in</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <?php 
+        echo $this->Session->flash('flash', array('element' => 'danger'));
+		echo $this->fetch('content');
+		echo $this->element('modal-signin');
+		?>
     </body>
 </html>

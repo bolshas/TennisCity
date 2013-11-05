@@ -5958,3 +5958,448 @@ Request URL: /TennisCity/js/jquery-latest.min.map
 Stack Trace:
 #0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-10-30 22:48:00 Error: Fatal Error (4): parse error in [/Users/andriusbolsaitis/www/TennisCity/View/Users/login.ctp, line 9]
+2013-10-30 22:48:00 Error: [FatalErrorException] parse error
+Request URL: /TennisCity/users/login
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'parse error', '/Users/andriusb...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/andriusb...', 9, Array)
+#2 /users/andriusbolsaitis/www/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/andriusb...', 9, Array)
+#3 /users/andriusbolsaitis/www/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-31 12:39:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/jquery-latest.min.map
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-31 12:41:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/jquery-latest.min.map
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-31 12:45:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/jquery-latest.min.map
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-31 12:50:02 Error: [Exception] parse error: failed at `border-radius: @input-border-radius` css/less/forms.less on line 138
+Request URL: /TennisCity/
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(2273): lessc_parser->throwError()
+#1 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(121): lessc_parser->parse('//?// Forms?// ...')
+#2 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#5 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(193): lessc->compileRoot(Object(stdClass))
+#6 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(1807): lessc->compileBlock(Object(stdClass))
+#7 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(1830): lessc->compile('// Core variabl...', 'css/less/bootst...')
+#8 /Users/andriusbolsaitis/www/TennisCity/View/Layouts/welcome.ctp(18): lessc->compileFile('css/less/bootst...', 'css/bootstrap.c...')
+#9 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(931): include('/Users/andriusb...')
+#10 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(893): View->_evaluate('/Users/andriusb...', Array)
+#11 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(525): View->_render('/Users/andriusb...')
+#12 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(470): View->renderLayout('', 'welcome')
+#13 /users/andriusbolsaitis/www/cakephp/lib/Cake/Controller/Controller.php(952): View->render('home', NULL)
+#14 /Users/andriusbolsaitis/www/TennisCity/Controller/PagesController.php(37): Controller->render('home')
+#15 [internal function]: PagesController->display('home')
+#16 /users/andriusbolsaitis/www/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#17 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#18 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#19 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2013-10-31 13:21:32 Error: [Exception] parse error: failed at `@input-bg:                       @body-bg +25;` css/less/variables.less on line 150
+Request URL: /TennisCity/
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(2273): lessc_parser->throwError()
+#1 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#5 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(193): lessc->compileRoot(Object(stdClass))
+#6 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(1807): lessc->compileBlock(Object(stdClass))
+#7 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(1830): lessc->compile('// Core variabl...', 'css/less/bootst...')
+#8 /Users/andriusbolsaitis/www/TennisCity/View/Layouts/welcome.ctp(18): lessc->compileFile('css/less/bootst...', 'css/bootstrap.c...')
+#9 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(931): include('/Users/andriusb...')
+#10 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(893): View->_evaluate('/Users/andriusb...', Array)
+#11 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(525): View->_render('/Users/andriusb...')
+#12 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(470): View->renderLayout('', 'welcome')
+#13 /users/andriusbolsaitis/www/cakephp/lib/Cake/Controller/Controller.php(952): View->render('home', NULL)
+#14 /Users/andriusbolsaitis/www/TennisCity/Controller/PagesController.php(37): Controller->render('home')
+#15 [internal function]: PagesController->display('home')
+#16 /users/andriusbolsaitis/www/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#17 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#18 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#19 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2013-11-01 21:31:19 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/webroot/WebFonts/specimen_files/easytabs.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 21:31:19 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/webroot/WebFonts/specimen_files/specimen_stylesheet.css
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 21:31:19 Error: [MissingControllerException] Controller class WebrootController could not be found.
+Exception Attributes: array (
+  'class' => 'WebrootController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/webroot/WebFonts/stylesheet.css
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 21:42:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/css/SourceSansPro-Regular-webfont.eot.woff
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 21:42:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/css/SourceSansPro-Regular-webfont.eot.ttf
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 21:42:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/css/SourceSansPro-Regular-webfont.eot.svg
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 21:42:49 Error: [MissingControllerException] Controller class WebFontsController could not be found.
+Exception Attributes: array (
+  'class' => 'WebFontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/WebFonts/SourceSansPro-Regular-webfont.eot.woff
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 21:42:51 Error: [MissingControllerException] Controller class WebFontsController could not be found.
+Exception Attributes: array (
+  'class' => 'WebFontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/WebFonts/SourceSansPro-Regular-webfont.eot.ttf
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 21:42:52 Error: [MissingControllerException] Controller class WebFontsController could not be found.
+Exception Attributes: array (
+  'class' => 'WebFontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/WebFonts/SourceSansPro-Regular-webfont.eot.svg
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 22:19:50 Error: [MissingControllerException] Controller class WebFontsController could not be found.
+Exception Attributes: array (
+  'class' => 'WebFontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/WebFonts/SourceSansPro.svg
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 22:41:46 Error: [MissingControllerException] Controller class WebFontsController could not be found.
+Exception Attributes: array (
+  'class' => 'WebFontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/WebFonts/Aller_Bdlt.ttf
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 22:42:32 Error: [MissingControllerException] Controller class WebFontsController could not be found.
+Exception Attributes: array (
+  'class' => 'WebFontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/WebFonts/Aller_Bdlt.ttf
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 22:44:24 Error: [MissingControllerException] Controller class WebFontsController could not be found.
+Exception Attributes: array (
+  'class' => 'WebFontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/WebFonts/Aller_Bdlt.ttf
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 22:50:07 Error: [MissingControllerException] Controller class WebFontsController could not be found.
+Exception Attributes: array (
+  'class' => 'WebFontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/WebFonts/Aller_BdIt.svg
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-01 22:50:34 Error: [MissingControllerException] Controller class WebFontsController could not be found.
+Exception Attributes: array (
+  'class' => 'WebFontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/WebFonts/Aller_BdIt.svg
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-02 14:44:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 11:50:20 Error: Fatal Error (1): Call to a member function create() on a non-object in [/Users/andriusbolsaitis/www/TennisCity/Controller/AppController.php, line 81]
+2013-11-03 11:50:20 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /TennisCity/users/validate
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/andriusb...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/andriusb...', 81, Array)
+#2 /users/andriusbolsaitis/www/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/andriusb...', 81, Array)
+#3 /users/andriusbolsaitis/www/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-03 11:53:02 Error: [MissingActionException] Action UsersController::ajax_validate() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ajax_validate',
+)
+Request URL: /TennisCity/ajax/users/validate
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-03 11:53:32 Error: [MissingActionException] Action UsersController::ajax_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ajax_login',
+)
+Request URL: /TennisCity/ajax/users/login
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-03 11:53:50 Error: [MissingActionException] Action UsersController::ajax_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ajax_login',
+)
+Request URL: /TennisCity/ajax/users/login
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-03 11:54:10 Error: [MissingActionException] Action UsersController::ajax_login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ajax_login',
+)
+Request URL: /TennisCity/ajax/users/login
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-03 12:08:27 Error: [MissingViewException] View file "/Users/andriusbolsaitis/www/TennisCity/View/Pages/validate.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Users/andriusbolsaitis/www/TennisCity/View/Pages/validate.ctp',
+)
+Request URL: /TennisCity/pages/validate
+Stack Trace:
+#0 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName('validate')
+#1 /users/andriusbolsaitis/www/cakephp/lib/Cake/Controller/Controller.php(952): View->render('validate', NULL)
+#2 /Users/andriusbolsaitis/www/TennisCity/Controller/PagesController.php(37): Controller->render('validate')
+#3 [internal function]: PagesController->display('validate')
+#4 /users/andriusbolsaitis/www/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-11-03 15:28:46 Error: [Exception] parse error: failed at `@state-danger-text:              #b94a48` css/less/variables.less on line 396
+Request URL: /TennisCity/users/login
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(2273): lessc_parser->throwError()
+#1 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(121): lessc_parser->parse('//?// Variables...')
+#2 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(753): lessc->tryImport(Array, Object(stdClass), Object(stdClass))
+#3 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(284): lessc->compileProp(Array, Object(stdClass), Object(stdClass))
+#4 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(278): lessc->compileProps(Object(stdClass), Object(stdClass))
+#5 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(193): lessc->compileRoot(Object(stdClass))
+#6 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(1807): lessc->compileBlock(Object(stdClass))
+#7 /Users/andriusbolsaitis/www/TennisCity/Vendor/lessc.php(1830): lessc->compile('//web fonts?@im...', 'css/less/bootst...')
+#8 /Users/andriusbolsaitis/www/TennisCity/View/Layouts/welcome.ctp(16): lessc->compileFile('css/less/bootst...', 'css/bootstrap.c...')
+#9 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(931): include('/Users/andriusb...')
+#10 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(893): View->_evaluate('/Users/andriusb...', Array)
+#11 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(525): View->_render('/Users/andriusb...')
+#12 /users/andriusbolsaitis/www/cakephp/lib/Cake/View/View.php(470): View->renderLayout('', 'welcome')
+#13 /users/andriusbolsaitis/www/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#14 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#15 /users/andriusbolsaitis/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#16 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2013-11-03 16:12:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 16:13:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 16:13:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 16:41:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 16:53:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 17:17:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 21:19:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 21:32:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 21:32:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 21:57:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/img/jumbotron-bg.png
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 21:58:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/img/jumbotron-bg.png
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-03 22:27:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-04 10:51:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-04 21:19:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

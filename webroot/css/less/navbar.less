@@ -138,7 +138,8 @@
 }
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px;
+  border-width: 0 0 0px;
+  box-shadow: 0 0 3px #000;
 }
 .navbar-fixed-bottom {
   bottom: 0;
@@ -151,10 +152,10 @@
 
 .navbar-brand {
   float: left;
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  padding: @navbar-padding-vertical @navbar-padding-horizontal @navbar-padding-vertical @navbar-padding-horizontal + 20px;
   font-size: @font-size-large;
   line-height: @line-height-computed;
-
+  background: @navbar-brand-logo no-repeat left center;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -495,6 +496,8 @@
 
   .navbar-brand {
     color: @navbar-inverse-brand-color;
+    font-style: italic;
+    text-shadow: 0 1px 1px #000;
     &:hover,
     &:focus {
       color: @navbar-inverse-brand-hover-color;

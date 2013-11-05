@@ -74,8 +74,16 @@ class AppController extends Controller {
                 $message = reset($errors);
                 $status = 'has-error';
             }
-            // $this->set('data', json_encode(array('status' => $status, $fieldName => $message)));
             echo json_encode(array('status' => $status, $fieldName => $message));
+        }
+        else {
+            echo '<form action="/TennisCity/users/validate" id="UserAjaxValidateForm" method="post" accept-charset="utf-8">';
+            echo '<label for="UserFieldName">Field Name</label>';
+            echo '<input name="data[User][fieldName]" type="text" id="UserFieldName"/>';
+            echo '<label for="UserEmail">Email</label>';
+            echo '<input name="data[User][email]" maxlength="100" type="email" id="UserEmail" required="required"/>';
+            echo '<input type="submit" value="Submit"/>';
+            echo '</form>';
         }
     }
 }

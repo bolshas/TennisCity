@@ -54,6 +54,10 @@ class UsersController extends AppController {
         }
     }
     
+    public function dummies() {
+        
+    }
+    
     public function login() {
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {

@@ -12,11 +12,10 @@ $(document).ready(function() {
         return this;
     };
 
-    $(this).submit(function(event) {
+    $('.validate').submit(function(event) {
         $(this).find($('input.validate')).each(function() {
-            console.log('labas');
             if($(this).val() === "" || $(this).closest('.form-group.has-error').length) {
-                $(':submit').shake(2, 5, 350);
+                $('.validate :submit').shake(2, 5, 350);
                 $(this).focus();
                 event.preventDefault();
                 return false;
@@ -39,13 +38,13 @@ $(document).ready(function() {
             field['fieldName'] = fieldName;
             field[fieldName] = fieldValue;
             data [modelName] = field;
-
             $(info).closest('.form-group').removeClass('has-error has-success').addClass('has-checking');
             $(info).text('Checking...');
             
             $.post(
-                window.location + "/users/validate", data,
+                location.protocol + '//' + location.host + location.pathname + '/users/validate', data,
                 function(data) {
+                    console.log();
                     $.each(data, function(key, value) {
                         if (key === 'status') {
                             $(info).closest('.form-group').removeClass('has-checking has-error has-success').addClass(value);
