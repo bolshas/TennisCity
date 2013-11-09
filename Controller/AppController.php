@@ -8,8 +8,8 @@ class AppController extends Controller {
         'Session',
         'Auth' => array(
             'loginRedirect' => array(
-                'controller' => 'posts', 
-                'action' => 'index'
+                'controller' => 'users', 
+                'action' => 'home'
             ),
             'logoutRedirect' => array(
                 'controller' => 'pages', 
@@ -35,10 +35,10 @@ class AppController extends Controller {
         $this->Auth->allow('validateField');
         
         if ($this->Auth->loggedIn()) {
-            $this->layout = 'default';
+            // $this->layout = 'welcome';
         }
         else {
-            $this->layout = 'welcome';
+            // $this->layout = 'welcome';
             if ($this->Cookie->read('remember_me_cookie')) {
                 $cookie = $this->Cookie->read('remember_me_cookie');
                 

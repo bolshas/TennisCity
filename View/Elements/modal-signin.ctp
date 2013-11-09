@@ -1,18 +1,18 @@
 <!-- Modal -->
-<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Sign in</h4>
+        <h4 class="modal-title" id="myModalLabel"><strong>Sign in</strong></h4>
       </div>
       <div class="modal-body">
         
-        <?php echo $this->Form->create('User', array('role' => 'form', 'autocomplete' => 'off', 'inputDefaults' => array('label' => false, 'div' => false, 'required' => false))); ?>
+        <?php echo $this->Form->create('User', array('role' => 'form', 'controller' => 'users', 'action' => 'login', 'autocomplete' => 'off', 'inputDefaults' => array('label' => false, 'div' => false, 'required' => false))); ?>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-12">
-                    <?php echo $this->Form->input('email', array('placeHolder'=>'Email', 'type' => 'text', 'class' => 'form-control'))?>
+                    <?php echo $this->Form->input('email', array('placeHolder'=>'Email', 'type' => 'text', 'class' => 'form-control', 'id' => 'needsFocus'))?>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
  
       </div>
       <div class="modal-footer">
-        <?php echo $this->Form->end(array('label' => 'Login', 'class' => 'btn btn-primary')); ?>
+        <?php echo $this->Form->end(array('label' => 'Sign in', 'class' => 'btn btn-primary')); ?>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

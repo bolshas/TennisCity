@@ -38,12 +38,12 @@
 class EmailConfig {
 
 	public $default = array(
-		'host' => 'ssl://smtp.gmail.com',
-		'port' => '465',
-		'username' => 'andrius.bolsaitis@gmail.com',
+		'host' => 'bolshas.com',
+		'port' => '25',
+		'username' => 'andrius',
 		'password' => 'Vlwrki28',
 		'transport' => 'Smtp',
-		'from' => 'andrius.bolsaitis@gmail.com',
+		'from' => 'andrius@bolshas.com',
 		//'charset' => 'utf-8',
 		//'headerCharset' => 'utf-8',
 	);

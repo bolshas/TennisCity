@@ -11,24 +11,28 @@ class UsersController extends AppController {
         parent::beforeFilter();
         $this->Auth->allow('register', 'confirm');
     }
+    
+    public function home() {
+        
+    }
 
     public function confirm() {
         if ($this->request['pass']) {
             $u = $this->User->findByValidation($this->request['pass'][0]);
             if (empty($u)) {
-                $this->Session->setFlash(__('Incorrect validation code.'));
+                $this->Session->setFlash(__('Incorrect validation code.'), 'danger');
             }
             else {
                 if ($u['User']['state'] == 0) {  // the user is found but is inactive
                     $this->User->id = $u['User']['id'];
                     $this->User->saveField('state', 1); // activate the email
-                    $this->Session->setFlash(__('Email validated successfully.'));
+                    $this->Session->setFlash(__('Email validated successfully.'), 'success');
                 }
                 return $this->redirect(array('controller' => 'users', 'action' => 'login'));
             }
         }
         else {
-            $this->Session->setFlash(__('The validation code has been sent to your email address. Please follow the instructions there.'));
+            $this->Session->setFlash(__('The validation code has been sent to your email address. Please follow the instructions there.'), 'success');
         }
     }
 
@@ -48,16 +52,12 @@ class UsersController extends AppController {
                 $email->viewVars(array('validation' => $validation));
                 $email->send();
                 
-                $this->Session->setFlash(__('The validation code has been sent to your email address. Please follow the instructions there.'));
+                $this->Session->setFlash(__('The validation code has been sent to your email address. Please follow the instructions there.'), 'success');
                 return $this->redirect(array('controller' => 'users', 'action' => 'login'));
             }
         }
     }
-    
-    public function dummies() {
-        
-    }
-    
+
     public function login() {
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
@@ -76,7 +76,7 @@ class UsersController extends AppController {
                     return $this->redirect(array('controller' => 'users', 'action' => 'confirm'));
                 }
             }
-            $this->Session->setFlash(__('Invalid username or password, please try again'));
+            $this->Session->setFlash(__('Invalid username or password, please try again'), 'danger');
         }
     }
     
@@ -100,10 +100,10 @@ class UsersController extends AppController {
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash(__('The user has been saved'));
+                $this->Session->setFlash(__('The user has been saved'), 'success');
                 return $this->redirect(array('action' => 'index'));
             }
-            $this->Session->setFlash(__('The user could not be saved. Please try again.'));
+            $this->Session->setFlash(__('The user could not be saved. Please try again.'), 'danger');
         }
         else {
             $this->request->data = $this->User->read(null, $id);
@@ -120,10 +120,10 @@ class UsersController extends AppController {
             throw new NotFoundException(__('Invalid user'));
         }
         if ($this->User->delete()) {
-            $this->Session->setFlash(__('User deleted'));
+            $this->Session->setFlash(__('User deleted'), 'success');
             return $this->redirect(array('action' => 'index'));
         }
-        $this->Session->setFlash(__('User was not deleted'));
+        $this->Session->setFlash(__('User was not deleted'), 'danger');
         return $this->redirect(array('action' => 'index'));
     }
 }

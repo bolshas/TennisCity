@@ -6403,3 +6403,618 @@ Request URL: /TennisCity/js/users/check_username.js
 Stack Trace:
 #0 /Users/andriusbolsaitis/www/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-11-05 20:05:56 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/Config/bootstrap.php(75): CakePlugin::load('DebugKit')
+#1 /home/andrius/projects/cakephp/lib/Cake/Core/Configure.php(92): include('/var/www/bolsha...')
+#2 /home/andrius/projects/cakephp/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#3 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(92): include('/home/andrius/p...')
+#4 {main}
+2013-11-05 20:06:18 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/Config/bootstrap.php(75): CakePlugin::load('DebugKit')
+#1 /home/andrius/projects/cakephp/lib/Cake/Core/Configure.php(92): include('/var/www/bolsha...')
+#2 /home/andrius/projects/cakephp/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#3 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(92): include('/home/andrius/p...')
+#4 {main}
+2013-11-05 20:07:44 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/Config/bootstrap.php(75): CakePlugin::load('DebugKit')
+#1 /home/andrius/projects/cakephp/lib/Cake/Core/Configure.php(92): include('/var/www/bolsha...')
+#2 /home/andrius/projects/cakephp/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#3 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(92): include('/home/andrius/p...')
+#4 {main}
+2013-11-05 20:59:27 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/Config/bootstrap.php(75): CakePlugin::load('DebugKit')
+#1 /home/andrius/projects/cakephp/lib/Cake/Core/Configure.php(92): include('/var/www/bolsha...')
+#2 /home/andrius/projects/cakephp/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#3 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(92): include('/home/andrius/p...')
+#4 {main}
+2013-11-05 21:01:07 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /TennisCity/
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Model/Model.php(3492): Model->setSource('users')
+#1 /home/andrius/projects/cakephp/lib/Cake/Model/Model.php(1352): Model->getDataSource()
+#2 /home/andrius/projects/cakephp/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#3 /home/andrius/projects/cakephp/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('User', 'fields')
+#4 /var/www/bolshas.com/public_html/TennisCity/View/Pages/home.ctp(12): FormHelper->create('User', Array)
+#5 /home/andrius/projects/cakephp/lib/Cake/View/View.php(931): include('/var/www/bolsha...')
+#6 /home/andrius/projects/cakephp/lib/Cake/View/View.php(893): View->_evaluate('/var/www/bolsha...', Array)
+#7 /home/andrius/projects/cakephp/lib/Cake/View/View.php(462): View->_render('/var/www/bolsha...')
+#8 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render('home', NULL)
+#9 /var/www/bolshas.com/public_html/TennisCity/Controller/PagesController.php(37): Controller->render('home')
+#10 [internal function]: PagesController->display('home')
+#11 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#12 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#13 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#14 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2013-11-05 21:48:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-06 13:30:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-06 14:12:52 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/user/register
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-06 14:13:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-06 14:19:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-06 18:41:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-06 19:15:52 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp',
+)
+Request URL: /TennisCity/users/sendMail
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-06 19:16:30 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp',
+)
+Request URL: /TennisCity/users/sendMail
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-06 19:21:59 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp',
+)
+Request URL: /TennisCity/users/sendMail
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-06 19:22:16 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp',
+)
+Request URL: /TennisCity/users/sendMail
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-06 19:30:15 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp',
+)
+Request URL: /TennisCity/users/sendMail
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-06 19:33:41 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp',
+)
+Request URL: /TennisCity/users/sendMail
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-06 19:33:51 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp',
+)
+Request URL: /TennisCity/users/sendMail
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-06 19:36:50 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp',
+)
+Request URL: /TennisCity/users/sendMail
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-06 19:40:30 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/send_mail.ctp',
+)
+Request URL: /TennisCity/users/sendMail
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-06 19:57:35 Error: [PrivateActionException] Private Action UsersController::flash() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'flash',
+)
+Request URL: /TennisCity/users/flash
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-06 19:58:02 Error: [PrivateActionException] Private Action UsersController::flash() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'flash',
+)
+Request URL: /TennisCity/users/flash
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:03:24 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/posts
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 11:09:35 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Pages/home/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Pages/home/home.ctp',
+)
+Request URL: /TennisCity/pages/home/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName('home/home')
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render('home/home', NULL)
+#2 /var/www/bolshas.com/public_html/TennisCity/Controller/PagesController.php(37): Controller->render('home/home')
+#3 [internal function]: PagesController->display('home', 'home')
+#4 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-11-09 11:10:12 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Pages/home/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Pages/home/home.ctp',
+)
+Request URL: /TennisCity/pages/home/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName('home/home')
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render('home/home', NULL)
+#2 /var/www/bolshas.com/public_html/TennisCity/Controller/PagesController.php(37): Controller->render('home/home')
+#3 [internal function]: PagesController->display('home', 'home')
+#4 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-11-09 11:10:26 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:32:44 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:34:19 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:35:11 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:39:23 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:42:27 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:47:52 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:49:48 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:52:04 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:57:29 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:57:42 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:58:41 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 11:58:53 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 12:02:50 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 12:03:41 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 12:06:24 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 12:06:24 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/bolshas.com/public_html/TennisCity/View/Elements/navbar.ctp, line 15]
+2013-11-09 12:06:24 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/bolsha...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/bolsha...', 15, Array)
+#2 /home/andrius/projects/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/bolsha...', 15, Array)
+#3 /home/andrius/projects/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-11-09 12:07:58 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 12:08:12 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-11-09 12:08:55 Error: [MissingViewException] View file "/var/www/bolshas.com/public_html/TennisCity/View/Users/home.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/bolshas.com/public_html/TennisCity/View/Users/home.ctp',
+)
+Request URL: /TennisCity/users/home
+Stack Trace:
+#0 /home/andrius/projects/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /home/andrius/projects/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /home/andrius/projects/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-09 12:12:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 12:12:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 12:12:55 Error: [MissingControllerException] Controller class FontsController could not be found.
+Exception Attributes: array (
+  'class' => 'FontsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/fonts/glyphicons-halflings-regular.svg
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 13:55:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 20:01:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 22:25:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 22:27:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 22:30:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 22:31:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 22:31:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 22:31:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-11-09 22:32:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /TennisCity/js/users/check_username.js
+Stack Trace:
+#0 /var/www/bolshas.com/public_html/TennisCity/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

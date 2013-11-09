@@ -1,56 +1,52 @@
-<?php
-$cakeDescription = __d('cake_dev', 'Tennis City');
+<?php 
+$bolDevelop = true; 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
-		echo $this->Html->meta('viewport', array('content' => 'width=device-width', 'initial-scale' => '1.0'));
-		echo $this->Html->css('style');
-		echo $this->Html->css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic&subset=latin,latin-ext');
-		echo $this->Html->script('http://code.jquery.com/jquery-1.9.1.js');
-		echo $this->Html->script('http://code.jquery.com/ui/1.10.3/jquery-ui.js');
-        echo $this->Html->script('http://rawgithub.com/mathiasbynens/jquery-placeholder/master/jquery.placeholder.js');
-        echo $this->Html->script('https://rawgithub.com/dennyferra/TypeWatch/master/jquery.typewatch.js');
 
-		echo $this->fetch('meta');
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tennis City</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic&subset=latin,latin-ext">
+        <?php 
+        if($bolDevelop === true) {
+            App::import('Vendor', 'lessc');
+            $less = new lessc;
+            $less->compileFile('css/less/bootstrap.less', 'css/bootstrap.css');
+        }
+        echo $this->Html->css('bootstrap');
+        echo $this->Html->script(array('jquery', 'jquery.ui', 'jquery.placeholder', 'jquery.typewatch', 'bootstrap'));
+        
+        echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
-    ?>    
-        <script>$(function() { $('input, textarea').placeholder();});</script>
-</head>
-<body>
-	<div id="container">
-		<div id="header">
-            <ul>
-                <li><a href="/TennisCity" class="active">Home</a></li>
-                <li><a href="#">Players</a></li>
-                <li><a href="#">Schedule</a></li>
-            </ul>
-			<?php
-			if ($this->Session->read('Auth.User')) {
-				echo $this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'));
-                $loggedInUser = $this->Session->read('Auth.User');
-                echo __('Welcome, ' . $loggedInUser['username']);
-			}
-			else {
-				echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login'));
-			}
-			?>
-		</div>
-		<div class="content">
-			<span id="tester"></span>
-			<?php echo $this->Session->flash(); ?>
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-		</div>
-	</div>
-</body>
+		?>
+        <script>
+        $(document).ready(function() {
+            $('input:text:visible:first').focus();
+            
+            $("#myModal").on('shown.bs.modal', function() {
+                $('#needsFocus').focus();
+            });
+         });
+        </script>
+    </head>
+    
+    <body>
+        <?php
+        echo $this->element('navbar');
+        
+        if (!@$this->params['pass'][0] == 'home') { // quick and dirty refactoring
+            echo '<div class="container">';
+            echo $this->fetch('content');
+            echo '</div>';
+        }
+        else {
+            echo $this->element('modal-signin');
+            echo $this->fetch('content');
+        }
+        echo $this->Session->flash();
+		?>
+    </body>
 </html>

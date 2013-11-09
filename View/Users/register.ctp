@@ -2,7 +2,7 @@
 	$this->Html->script('users/check_username', array('inline' => false));
 ?>
 
-<div class="users form">
+<div class="users form col-sm-12">
 <?php 
 echo $this->Form->create('User', array(
 	'inputDefaults' => array(
