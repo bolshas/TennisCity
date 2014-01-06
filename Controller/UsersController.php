@@ -4,16 +4,69 @@ App::uses('CakeEmail', 'Network/Email');
 
 class UsersController extends AppController {
     
-    public $components = array('Password');
-    public $helpers = array('Html');
+    public $components = array('Password', 'Paginator');
+    public $helpers = array('Html', 'BSForm', 'BSPaginator', 'Country');
+    
+    public $paginate = array (
+    	'limit' => 24,
+    	'order' => array('User.username' => 'asc'),
+    	'conditions' => array('User.state' => '1')
+    );
     
     public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('register', 'confirm');
     }
     
+    public function info() {
+    	$this->autoRender = false;
+    	
+    	require_once('../Vendor/Faker/src/autoload.php');
+    	$faker = Faker\Factory::create('lt_LT');
+    	
+    	$directory = IMAGES . 'faces/';
+    	$handler = opendir($directory);
+    	
+    	while ($file = readdir($handler)) {
+    		if($file != '.' && $file != '..') {
+	            $data['User']['username'] = $faker->firstname . ' ' . $faker->lastname;
+	            $data['User']['password'] = 'Password123';
+	            $data['User']['email'] = $faker->unique()->email;
+	            $data['User']['validation'] = $this->Password->random();
+	            $data['User']['state'] = 1;
+	            $data['User']['id'] = '';
+	            
+	            $data['Profile']['photo'] = $file;
+	            $data['Profile']['born'] = array('year' => $faker->year, 'month' => $faker->month, 'day' => $faker->dayOfMonth);
+	            $data['Profile']['started'] = array('year' => $faker->year, 'month' => $faker->month, 'day' => $faker->dayOfMonth);
+	            $data['Profile']['experience'] = $faker->randomElement(array('professional','amateur'));
+	            $data['Profile']['hand'] = $faker->randomElement(array('left','right'));
+	            $data['Profile']['sex'] = $faker->randomElement(array('male','female'));
+	 			$data['Profile']['country'] = $faker->countryCode;
+	 			$data['Profile']['id'] = '';
+	 			
+	 			$this->User->create($data);
+    			// $this->User->saveAssociated($data);
+    		}
+        }
+        closedir($handler);
+    }
+    
     public function home() {
-        
+        $user = $this->User->findById($this->Session->read('Auth.User.id'));
+        $this->request->data = $this->User->read(null, $user['User']['id']);
+        $this->set('cities', $this->User->Profile->City->find('list'));
+    }
+    
+    public function index() {
+    	$this->Paginator->settings = $this->paginate;
+    	
+    	$data = $this->Paginator->paginate('User');
+    	$this->set('users', $data);
+    	
+        $loggedIn = $this->User->read(null, $this->Session->read('Auth.User.id'));
+    	$this->set('friends', $this->User->friends());
+    	$this->set('loggedIn', $loggedIn);
     }
 
     public function confirm() {
@@ -90,6 +143,8 @@ class UsersController extends AppController {
             throw new NotFoundException(__('Invalid user'));
         }
         $this->set('user', $this->User->read(null, $id));
+        $this->set('friends', $this->User->Friendship->getFriends($id));
+        // $this->set('friends', $this->User->Friendship->showFriends($id));
     } 
     
     public function edit($id = null) {
@@ -113,7 +168,7 @@ class UsersController extends AppController {
     
     public function delete($id = null) {
         if (!$this->request->is('post')) {
-            throw new MethodNotAllowdException(__('Invalid user'));
+            throw new MethodNotAllowedException(__('Invalid user'));
         }
         $this->User->id = $id;
         if (!$this->User->exists()) {

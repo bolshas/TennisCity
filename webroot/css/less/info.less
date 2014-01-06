@@ -1,27 +1,5 @@
-.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-s-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    // border: 0px solid;
-    // border-color: #888;
-    // padding-bottom: 1000px;
-    // margin-bottom: -900px;
-}
-
-html, body {
-    // height: 100%;
-}
-
 body {
     padding-top: 70px;
-}
-
-.container {
-    // overflow: hidden;
-}
-
-.white-form {
-    background-color: #fff;
-    border-radius: @border-radius-base;
-    padding: @padding-base-horizontal;
-    border: 1px @gray-dark solid;
 }
 
 .dropdown .glyphicon {
@@ -32,6 +10,58 @@ body {
     margin-left: 15px;
 }
 
-.jumbotron {
-    // background-image: url('../img/jumbotron-bg.png');
+.listItem {
+    .clearfix();
+    
+    border: 1px solid @gray-lighter - 10;
+    border-top: 0;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    &:first-child {
+        border-top: 1px solid @gray-lighter - 10;
+        border-top-right-radius: @border-radius-base;
+        border-top-left-radius: @border-radius-base;
+    }
+    
+    &:hover {
+        background-color: @gray-lighter + 10;
+        .action-text { color: @gray-light; }
+    }
+    
+    .listItem-footer {
+        float: right;
+        width: 100%;
+    }
+    
+    .actions {
+        float: right;
+        margin: 0;
+    }
+    .actions li {
+        float: left;
+        list-style: none;
+        margin-left: 10px;
+    }
+    
+    .action-text {
+        color: @gray-lighter - 10;
+        &:hover {
+            cursor: pointer;
+            color: @gray;
+        }
+    }
+    
+    .title {
+        float: left;
+    }
+    
+    .userPhoto {
+        float: left;
+        width: 64px;
+        height: 64px;
+        border-radius: @border-radius-base * 2;
+        margin-right: 10px;
+    }
 }

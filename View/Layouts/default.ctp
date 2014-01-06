@@ -24,7 +24,10 @@ $bolDevelop = true;
 		?>
         <script>
         $(document).ready(function() {
-            $('input:text:visible:first').focus();
+        
+            $('input, textarea').placeholder();
+
+            // $('input:text:visible:first').focus();
             
             $("#myModal").on('shown.bs.modal', function() {
                 $('#needsFocus').focus();
@@ -37,16 +40,16 @@ $bolDevelop = true;
         <?php
         echo $this->element('navbar');
         
-        if (!@$this->params['pass'][0] == 'home') { // quick and dirty refactoring
+        if (@$this->params['pass'][0] != 'home') { // quick and dirty refactoring
             echo '<div class="container">';
+            echo $this->Session->flash();
             echo $this->fetch('content');
             echo '</div>';
         }
         else {
-            echo $this->element('modal-signin');
+            echo $this->Session->flash();
             echo $this->fetch('content');
         }
-        echo $this->Session->flash();
 		?>
     </body>
 </html>

@@ -29,6 +29,7 @@ class AppController extends Controller {
     public $uses = array('User');
     
     public function beforeFilter() {
+        Configure::write('Config.language', 'ltu');
         $this->Cookie->key = 'gWlW9AiZjB6OA3uFdeA45anRNT5LxF7DoWUVrJxi';
         $this->Cookie->httpOnly = true;
         
@@ -36,6 +37,7 @@ class AppController extends Controller {
         
         if ($this->Auth->loggedIn()) {
             // $this->layout = 'welcome';
+            $this->set('me', $this->Auth->user('Friends'));
         }
         else {
             // $this->layout = 'welcome';

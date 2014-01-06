@@ -4118,7 +4118,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #999999;
   background-color: #fff;
   border-color: #ddd;
-  cursor: not-allowed;
+  cursor: default;
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
@@ -5453,17 +5453,74 @@ button.close {
 body {
   padding-top: 70px;
 }
-.white-form {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 12px;
-  border: 1px #333333 solid;
-}
 .dropdown .glyphicon {
   left: -10px;
 }
 .navbar-brand {
   margin-left: 15px;
+}
+.listItem {
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.listItem:before,
+.listItem:after {
+  content: " ";
+  display: table;
+}
+.listItem:after {
+  clear: both;
+}
+.listItem:before,
+.listItem:after {
+  content: " ";
+  display: table;
+}
+.listItem:after {
+  clear: both;
+}
+.listItem:first-child {
+  border-top: 1px solid #e4e4e4;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.listItem:hover {
+  background-color: #f8f8f8;
+}
+.listItem:hover .action-text {
+  color: #999999;
+}
+.listItem .listItem-footer {
+  float: right;
+  width: 100%;
+}
+.listItem .actions {
+  float: right;
+  margin: 0;
+}
+.listItem .actions li {
+  float: left;
+  list-style: none;
+  margin-left: 10px;
+}
+.listItem .action-text {
+  color: #e4e4e4;
+}
+.listItem .action-text:hover {
+  cursor: pointer;
+  color: #555555;
+}
+.listItem .title {
+  float: left;
+}
+.listItem .userPhoto {
+  float: left;
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
 .clearfix:before,
 .clearfix:after {

@@ -5,22 +5,46 @@ class User extends AppModel {
     
     public $hasOne = array(
         'Profile' => array(
-            'className' => 'Profile',
             'dependent' => true
         )
     );
     
-    public $success = array(
-        'username' => 'This is how others will see you.',
-        'email' => 'We\'ll send you an email to make sure it is yours.',
-        'password' => 'Your password is strong.'
-        );
+    public $hasMany = array(
+    	'FriendFrom' => array(
+    		'className' => 'Friendship',
+    		'foreignKey' => 'user_from'
+    	),
+    	'FriendTo' => array(
+    		'className' => 'Friendship',
+    		'foreignKey' => 'user_to'
+    	)
+    );
+    
+    public $hasAndBelongsToMany = array(
+    	'UserFriendship' => array (
+    		'className' => 'User',
+    		'joinTable' => 'friendships',
+    		'foreignKey' => 'user_from',
+    		'associationForeignKey' => 'user_to',
+    		'with' => 'Friendship'
+    	)
+    );
+    
+    function __construct() {
+        $this->success = array(
+            'username' => __('This is how others will see you.'),
+            'email' => __('We\'ll send you an email in order to make sure it is yours.'),
+            'password' => __('Your password is strong.'));
+        return parent::__construct();
+    }
+    
+    public $success = array();
 
     public $validate = array(
         'username' => array(
             'not_empty' => array(
                 'rule' => 'notEmpty',
-                'message' => 'Your name as other will see you.',
+                'message' => 'Your name as others will see you.',
                 'last' => true
             ),
             'minimum' => array(
@@ -72,6 +96,19 @@ class User extends AppModel {
             )
         )
     );
+    
+    public function friends() { 
+        $conditions = array('status' => '0', 'OR' => array('user_from' => $this->id, 'user_to' => $this->id));
+        $fields = array('UserFrom.username', 'UserTo.username', 'UserFrom.id', 'UserTo.id');
+        $data = $this->Friendship->find('all', array('conditions' => $conditions, 'fields' => $fields));
+        
+        foreach ($data as $friend) {
+            if ($friend['UserFrom']['id'] != $this->id) $friends[] = $friend['UserFrom']['id'];
+            if ($friend['UserTo']['id'] != $this->id) $friends[] = $friend['UserTo']['id'];
+        }
+        
+        return $friends;
+    }
 
     public function beforeSave($options = array()) {
         if (isset($this->data[$this->alias]['password'])) {

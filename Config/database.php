@@ -59,10 +59,20 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
+		'login' => 'andrius',
 		'password' => 'Vlwrki28',
 		'database' => 'cake',
 		'prefix' => '',
+		'encoding' => 'utf8',
+	);	
+	public $dummy = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'andrius',
+		'password' => 'Vlwrki28',
+		'database' => 'cake',
+		'prefix' => 'dummy_',
 		'encoding' => 'utf8',
 	);
 }
